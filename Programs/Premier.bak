@@ -1,0 +1,21 @@
+program Premier;
+var x, i, c, sum: integer;
+begin
+  Writeln ('Введите число');
+  repeat
+  Readln(x);
+  until (x>0);
+  i:=0;
+  c:=0;
+  sum:=0;
+  While not(i=x) do
+  begin
+    inc(i);
+    if not (c=x) then
+    begin
+     sum:=sum+c*c;
+    end;
+  end;
+  WriteLn('Сумма:',sum);
+  Readln;
+end.

@@ -1,0 +1,8 @@
+PROGRAM HELLO_WORLD;
+VAR NAME:STRING;
+BEGIN
+    WRITELN('Enter your name:');
+    readln(name);
+    writeln('Hello ',name);
+    readln;
+END.

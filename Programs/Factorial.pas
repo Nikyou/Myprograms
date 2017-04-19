@@ -1,0 +1,23 @@
+program Factorial;
+var x, i, c: integer;
+                sum:longint;
+begin
+  Writeln ('‚¢¥¤¨â¥ ç¨á«®(¤® 12-â¨)');
+  repeat
+  Readln(x);
+  until ((x>0) and (x<13));
+  i:=0;
+  c:=0;
+  sum:=1;
+  While not(i=x) do
+  begin
+    inc(i);
+    if not (c=x) then
+    begin
+     inc(c);
+     sum:=sum*c;
+    end;
+  end;
+  WriteLn('‘ã¬¬ :',sum);
+  Readln;
+end.

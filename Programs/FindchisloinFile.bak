@@ -1,0 +1,48 @@
+program FindChisloInFile;
+const N=100000;
+type TArray=array[1..N]of longint;
+
+procedure ReadlnFile(var arr:tarray; var len:longint);
+var f:text;
+        i:longint;
+begin
+  i:=0;
+  assign (f,'From.txt');
+  Reset(f);
+  While not eof(f) do
+  begin
+    inc(i);
+    Readln(f, arr[i]);
+  end;
+  len:=i;
+  Close(f);
+end;
+
+procedure ShowFile(arr:tarray; len:longint);
+var i:longint;
+begin
+  for i:=1 to len do
+  begin
+    Writeln(arr[i]);
+  end;
+end;
+
+var arr:tarray;
+        i,a,z,len:longint;
+begin
+  ReadlnFile (arr,len);
+  ShowFile(arr,len);
+  Writeln;
+  Readln(a);
+  for i:=1 to len do
+  begin
+    if (arr[i]=a) then
+    begin
+      Writeln(i);
+      z:=1;
+    end;
+  end;
+  If z<>1 then
+        Writeln('Такого числа нет');
+  ReadLn;
+end.
