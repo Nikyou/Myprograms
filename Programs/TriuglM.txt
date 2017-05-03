@@ -1,0 +1,6 @@
+Иструкция к модулю TriuglM:
+function PerimTruiglM(a,b,c:real):real - Периметр треугольника
+function PloshTruiglM(a,b,c:real):real - Площадь треугольника
+function IsReaLTruiglM(a,b,c:real):integer - Существует ли такой треугольник, 0=несуществует; 1=существует
+procedure TypeTruiglM(a,b,c:real) - Какого типа треугольник
+procedure VidTruiglM(a,b,c:real) - Какого вида треугольник
