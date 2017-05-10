@@ -1,0 +1,6 @@
+Иструкция к модулю ChislaM
+function SumChis(arr:TArray; len:integer):real - Находит сумма чисел из массива
+function MaxChis(arr:TArray; len:integer):real - Находит наибольшее число в массиве
+function MinChis(arr:TArray; len:integer):real - Находит наименьшее число в массиве
+function SredChis(arr:TArray; len:integer):real - Находит среднее арифметическое в массиве
+procedure ReadArrChis(var x:TArray; z:integer) - Считывает массив, вписать -656 что бы закончить
