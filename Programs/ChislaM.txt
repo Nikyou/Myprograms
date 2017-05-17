@@ -1,4 +1,6 @@
 Иструкция к модулю ChislaM
+const N=100000;
+Type TArray=array[1..N] of Integer;
 function SumChis(arr:TArray; len:integer):real - Находит сумма чисел из массива
 function MaxChis(arr:TArray; len:integer):real - Находит наибольшее число в массиве
 function MinChis(arr:TArray; len:integer):real - Находит наименьшее число в массиве
