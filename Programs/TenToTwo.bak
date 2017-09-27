@@ -1,0 +1,44 @@
+program TenToTwo;
+
+var number,remainder:integer;
+        result:string;
+
+function invert(a:string):string;
+var i: integer;
+    res: string;
+begin
+  res:='';
+  for i:=1 to length(a) do begin
+    if a[i]='0' then res:=res+'1'
+    else res:=res+'0';
+  end;
+  invert:=res;
+end;
+
+
+begin
+  Write('Number: ');
+  Readln(number);
+  result:='';
+  if number<0 then
+  begin
+    number := -number - 1;
+    repeat
+      remainder:=number mod 2;
+      number:=number div 2;
+      if remainder = 0 then result := '0' + result
+      else result := '1' + result;
+    until number=0;
+    result:=invert(result);
+  end
+  else
+    repeat
+      remainder:=number mod 2;
+      number:=number div 2;
+      if remainder = 0 then result := '0' + result
+      else result := '1' + result;
+    until number=0;
+  end;
+  Writeln('Result:', result);
+  Readln;
+end.
