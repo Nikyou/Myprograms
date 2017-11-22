@@ -1,0 +1,210 @@
+Bruins - Cats; 5; 1; Kutans; 84; Arturo; 17; Arturo; 71; Putans; 48; Putans; 51; Dons; 34
+Shrews - Lions; 1; 2; Ozolinsh; 43; Reboks; 16; Trusevichs; 41
+Shrews - Camels; 0; 1; Blazers; 7
+Turtles - Otters; 0; 0
+Cats - Foxes; 0; 2; Vilovs; 30; Dilovs; 11
+Lions - Horses; 1; 0; Trusevichs; 19
+Lions - Camels; 1; 1; Reboks; 72; Bezrukovs; 7
+Tigers - Shrews; 1; 2; Pinkovskis; 73; Knops; 68; Buzhoks; 6
+Tigers - Badgers; 1; 1; Minato; 89; Plume; 81
+Lions - Turtles; 1; 3; Reboks; 79; Jaru; 68; Maru; 42; Mugs; 66
+Dogs - Camels; 7; 1; Smits; 61; Dzhons; 70; Smits; 39; Tots; 77; Kits; 7; Tits; 43; Bofs; 84; Ashmanis; 46
+Shrews - Horses; 3; 3; Nazarovs; 29; Fetlers; 12; Ozolinsh; 51; Lozo; 14; Lozo; 45; Brins; 43
+Monkeys - Lions; 0; 0
+Crocodiles - Foxes; 0; 3; Puks; 3; Vilovs; 84; Buks; 3
+Camels - Monkeys; 1; 1; Galbalinsh; 21; Dombrovskis; 50
+Dogs - Shrews; 3; 1; Dzhons; 21; Kits; 14; Bofs; 46; Buzhoks; 46
+Monkeys - Camels; 0; 3; Lacis; 9; Lacis; 37; Ashmanis; 40
+Crocodiles - Cats; 2; 2; Flipers; 72; Moti; 71; Kroks; 20; Kroks; 52
+Camels - Foxes; 2; 1; Ashmanis; 39; Bezrukovs; 27; Buks; 28
+Crocodiles - Dogs; 2; 0; Toti; 38; Foti; 87
+Otters - Monkeys; 3; 0; Iljinihs; 69; Iljinihs; 19; Kocers; 84
+Otters - Horses; 2; 1; Lukashonoks; 7; Jansons; 10; Brauns; 73
+Bruins - Crocodiles; 3; 2; Kutans; 4; Arturo; 87; Arturo; 33; Toti; 74; Foti; 8
+Foxes - Lions; 1; 3; Dilovs; 87; Reboks; 30; Shtefenbergs; 25; Rassa; 37
+Cats - Dogs; 0; 1; Kits; 86
+Badgers - Lions; 0; 0
+Bruins - Badgers; 5; 3; Nutans; 1; Enriko; 4; Pilovs; 70; Arturo; 82; Enriko; 6; abele; 27; abele; 83; Apse; 33
+Shrews - Monkeys; 2; 3; Nazarovs; 36; Buzhoks; 8; Grînbergs; 2; Priede; 83; Grînbergs; 54
+Turtles - Cats; 3; 0; Duks; 65; Mugs; 19; Duks; 73
+Cats - Crocodiles; 1; 3; Fils; 42; Foti; 38; Flipers; 7; Moti; 28
+Tigers - Raccoons; 1; 5; Pavelsons; 46; Sejonovs; 59; Vîtols; 13; Rogovs; 22; Rjabinovs; 38; Rogovs; 70
+Camels - Turtles; 3; 1; Bruklis; 38; Galbalinsh; 52; Lacis; 55; Jugs; 40
+Bruins - Raccoons; 3; 1; Kutans; 77; Gilovs; 72; Gilovs; 62; Vîtols; 12
+Turtles - Dogs; 1; 1; Duks; 75; Dzhons; 48
+Horses - Cats; 2; 2; Lozo; 87; Mozo; 60; Bîns; 65; Kroks; 82
+Turtles - Crocodiles; 2; 2; Duks; 87; Duks; 63; Flipers; 29; Poti; 18
+Foxes - Badgers; 2; 2; Vilovs; 82; Kilovs; 18; Alksnis; 35; Kadiíis; 20
+Raccoons - Camels; 2; 3; Pashko; 19; Sejonovs; 86; Blazers; 12; Blazers; 78; Bruklis; 88
+Otters - Lions; 2; 2; Aleinikovs; 11; Iljinihs; 64; Skosa; 58; Pushins; 52
+Raccoons - Bruins; 1; 2; Sejonovs; 56; Kutans; 68; Putans; 8
+Turtles - Tigers; 4; 0; Jugs; 2; Jugs; 69; Karu; 74; Jugs; 30
+Shrews - Foxes; 2; 3; Vito; 49; Buzhoks; 61; Vilovs; 86; Dilovs; 55; Dilovs; 8
+Crocodiles - Raccoons; 0; 0
+Turtles - Monkeys; 1; 3; Karu; 69; Dombrovskis; 11; Priedîtis; 64; Millersons; 70
+Otters - Crocodiles; 2; 3; Iljinihs; 30; Iljinihs; 67; Loti; 45; Poti; 43; Foti; 86
+Cats - Badgers; 0; 2; Kadiíis; 19; Kadiíis; 39
+Horses - Badgers; 1; 1; Kozo; 21; abele; 7
+Horses - Crocodiles; 2; 1; Mozo; 33; Kozo; 4; Poti; 70
+Raccoons - Foxes; 0; 1; Dilovs; 38
+Badgers - Monkeys; 1; 3; Apse; 88; Lipenbergs; 37; Priede; 8; Millersons; 55
+Dogs - Badgers; 1; 1; Bofs; 29; Pîladzis; 67
+Cats - Shrews; 2; 2; Bîns; 72; Bobs; 47; Knops; 51; Feldmanis; 71
+Shrews - Turtles; 2; 2; Ozolinsh; 72; Feldmanis; 82; Jugs; 34; Fugs; 37
+Tigers - Monkeys; 3; 1; Petrovs; 56; Pinkovskis; 77; Minato; 31; Millersons; 1
+Bruins - Dogs; 2; 0; Putans; 5; Putans; 21
+Cats - Turtles; 1; 2; Dons; 47; Fugs; 8; Jugs; 49
+Raccoons - Otters; 1; 1; Vîtols; 24; Iljinihs; 84
+Camels - Tigers; 0; 1; Skuja; 63
+Crocodiles - Tigers; 6; 2; Flipers; 71; Loti; 1; Poti; 3; Foti; 4; Flipers; 13; Loti; 76; Pinkovskis; 20; Pinkovskis; 72
+Badgers - Camels; 2; 3; Plume; 18; abele; 88; Ashmanis; 34; Ashmanis; 72; Bezrukovs; 21
+Turtles - Foxes; 2; 0; Mugs; 85; Mugs; 30
+Crocodiles - Camels; 1; 1; Poti; 40; Ashmanis; 65
+Tigers - Lions; 0; 1; Rassa; 11
+Monkeys - Horses; 1; 3; Lipenbergs; 31; Brauns; 16; Brauns; 77; Jozo; 16
+Horses - Tigers; 2; 1; Jozo; 58; Brins; 5; Seilis; 5
+Foxes - Otters; 2; 0; Vilovs; 57; Puks; 83
+Dogs - Turtles; 3; 2; Tits; 18; Bofs; 34; Bofs; 33; Jugs; 72; Maru; 26
+Otters - Shrews; 3; 1; Jansons; 12; Kozlovskis; 2; Kozlovskis; 33; Knops; 12
+Lions - Crocodiles; 3; 1; Reboks; 29; Trusevichs; 55; Trusevichs; 59; Toti; 6
+Raccoons - Dogs; 5; 3; Vitolsks; 14; Shprunks; 88; Vîtols; 16; Rogovs; 47; Rjabinovs; 47; Kits; 26; Bofs; 33; Tits; 47
+Dogs - Lions; 1; 0; Dzhons; 50
+Shrews - Tigers; 1; 2; Nazarovs; 46; Seilis; 11; Pavelsons; 15
+Foxes - Dogs; 1; 0; Buks; 5
+Lions - Badgers; 3; 0; Rassa; 86; Rassa; 26; Reboks; 9
+Cats - Raccoons; 3; 0; Bobs; 3; Konans; 72; Dons; 17
+Crocodiles - Monkeys; 0; 0
+Crocodiles - Turtles; 1; 2; Toti; 7; Karu; 19; Jugs; 45
+Horses - Monkeys; 8; 3; Mozo; 6; Dozo; 39; Dozo; 46; Lozo; 32; Brins; 57; Brauns; 50; Mozo; 51; Kozo; 89; Millersons; 50; Dombrovskis; 40; Priede; 19
+Raccoons - Shrews; 2; 2; Pashko; 79; Sejonovs; 86; Fetlers; 13; Vito; 85
+Dogs - Bruins; 1; 1; Dzhons; 71; Kutans; 82
+Camels - Horses; 1; 1; Lacis; 26; Jozo; 49
+Horses - Turtles; 2; 2; Mozo; 32; Brins; 84; Jugs; 55; Duks; 38
+Tigers - Camels; 1; 1; Pinkovskis; 44; Bruklis; 46
+Badgers - Dogs; 1; 1; Lapa; 35; Tots; 20
+Tigers - Horses; 2; 3; Pavelsons; 89; Seglinsh; 50; Dozo; 89; Kozo; 26; Brauns; 84
+Horses - Raccoons; 1; 1; Dozo; 87; Sejonovs; 35
+Cats - Bruins; 2; 0; Konans; 16; Dons; 25
+Lions - Foxes; 0; 1; Kilovs; 7
+Foxes - Crocodiles; 1; 3; Dilovs; 52; Poti; 12; Loti; 21; Moti; 15
+Lions - Raccoons; 1; 1; Pushins; 18; Shprunks; 54
+Badgers - Turtles; 2; 1; Kadiíis; 82; Plume; 89; Karu; 82
+Camels - Bruins; 2; 1; Ashmanis; 68; Lacis; 65; Arturo; 22
+Crocodiles - Horses; 1; 2; Foti; 89; Dozo; 85; Kozo; 80
+Dogs - Crocodiles; 0; 1; Toti; 6
+Shrews - Otters; 0; 3; Kocers; 69; Lukashonoks; 21; Kaleiniks; 90
+Tigers - Dogs; 0; 3; Smits; 51; Bils; 16; Bofs; 80
+Turtles - Horses; 2; 0; Jugs; 39; Mugs; 27
+Turtles - Bruins; 3; 0; Jugs; 17; Karu; 79; Maru; 82
+Raccoons - Horses; 1; 3; Rjabinovs; 69; Mozo; 36; Jozo; 34; Kozo; 1
+Otters - Dogs; 1; 2; Jansons; 84; Bofs; 40; Tits; 24
+Shrews - Badgers; 2; 3; Feldmanis; 52; Fetlers; 66; Pîladzis; 52; Plume; 55; Apse; 30
+Horses - Bruins; 0; 1; Arturo; 46
+Tigers - Bruins; 0; 0
+Cats - Tigers; 3; 1; Konans; 9; Fils; 18; Bîns; 29; Pavelsons; 53
+Dogs - Foxes; 0; 1; Kilovs; 78
+Foxes - Horses; 1; 1; Milovs; 1; Brauns; 35
+Camels - Lions; 2; 1; Apsîtis; 66; Ashmanis; 80; Skosa; 67
+Tigers - Crocodiles; 3; 0; Pinkovskis; 67; Seglinsh; 63; Skuja; 63
+Horses - Camels; 3; 1; Kozo; 26; Kozo; 36; Kozo; 58; Lacis; 81
+Crocodiles - Badgers; 0; 3; Plume; 21; Kadiíis; 62; Alksnis; 64
+Monkeys - Dogs; 1; 1; Lipenbergs; 64; Dzhons; 33
+Dogs - Cats; 1; 2; Kits; 74; Rokijs; 44; Konans; 36
+Raccoons - Tigers; 1; 3; Rogovs; 19; Pavelsons; 25; Minato; 46; Pinkovskis; 74
+Camels - Crocodiles; 1; 2; Bruklis; 41; Dzoti; 36; Dzoti; 68
+Raccoons - Lions; 2; 2; Rjabinovs; 82; Shprunks; 46; Reboks; 75; Skosa; 18
+Otters - Camels; 4; 0; Kaleiniks; 18; Kocers; 88; Kocers; 8; Kocers; 20
+Lions - Monkeys; 2; 0; Skosa; 22; Reboks; 18
+Monkeys - Tigers; 1; 1; Millersons; 86; Pavelsons; 16
+Otters - Cats; 5; 2; Kozlovskis; 21; Iljinihs; 59; Iljinihs; 11; Lukashonoks; 78; Kaleiniks; 37; Fils; 52; Bobs; 46
+Foxes - Cats; 0; 1; Dons; 6
+Badgers - Tigers; 1; 2; abele; 54; Pinkovskis; 36; Seglinsh; 86
+Badgers - Cats; 1; 0; Plume; 86
+Monkeys - Bruins; 0; 5; Nutans; 63; Arturo; 21; Gilovs; 52; Arturo; 66; Kutans; 18
+Cats - Lions; 2; 1; Kroks; 36; Kroks; 31; Shapkins; 90
+Monkeys - Raccoons; 1; 2; Priedîtis; 59; Rjabinovs; 86; Rjabinovs; 47
+Lions - Bruins; 1; 3; Skosa; 30; Gilovs; 18; Arturo; 11; Gilovs; 21
+Horses - Shrews; 3; 3; Brauns; 67; Mozo; 5; Brins; 75; Feldmanis; 82; Nazarovs; 21; Vito; 1
+Crocodiles - Otters; 3; 2; Foti; 22; Loti; 76; Moti; 18; Kaleiniks; 84; Aleinikovs; 17
+Bruins - Horses; 2; 1; Pilovs; 56; Nutans; 5; Jozo; 26
+Monkeys - Crocodiles; 0; 0
+Badgers - Shrews; 1; 0; Pîladzis; 63
+Monkeys - Turtles; 2; 0; Grînbergs; 60; Millersons; 55
+Raccoons - Cats; 2; 2; Shprunks; 53; Shprunks; 50; Bobs; 67; Bobs; 61
+Shrews - Dogs; 2; 1; Nazarovs; 84; Nazarovs; 63; Kits; 38
+Otters - Foxes; 0; 0
+Monkeys - Shrews; 2; 1; Millersons; 44; Priede; 48; Feldmanis; 70
+Otters - Turtles; 3; 2; Lukashonoks; 56; Iljinihs; 22; Jansons; 13; Jugs; 60; Jugs; 7
+Turtles - Camels; 2; 3; Maru; 52; Karu; 52; Ashmanis; 83; Ashmanis; 76; Apsîtis; 11
+Tigers - Foxes; 0; 1; Vilovs; 26
+Badgers - Crocodiles; 2; 2; Pîladzis; 28; Alksnis; 76; Loti; 80; Flipers; 67
+Camels - Dogs; 0; 0
+Turtles - Shrews; 5; 1; Maru; 27; Duks; 26; Mugs; 84; Mugs; 4; Maru; 50; Vito; 19
+Foxes - Shrews; 3; 3; Milovs; 62; Dilovs; 28; Puks; 42; Fetlers; 2; Buzhoks; 52; Nazarovs; 28
+Cats - Monkeys; 3; 1; Konans; 54; Fils; 80; Konans; 41; Lipenbergs; 74
+Lions - Cats; 2; 2; Pushins; 22; Shtefenbergs; 36; Kroks; 15; Konans; 24
+Turtles - Raccoons; 1; 1; Jugs; 79; Sejonovs; 78
+Camels - Shrews; 0; 6; Feldmanis; 86; Feldmanis; 7; Ozolinsh; 63; Knops; 2; Ozolinsh; 8; Vito; 27
+Cats - Camels; 1; 2; Konans; 9; Lacis; 32; Bruklis; 19
+Horses - Dogs; 3; 1; Kozo; 7; Lozo; 15; Mozo; 66; Dzhons; 86
+Crocodiles - Shrews; 2; 1; Moti; 9; Foti; 17; Fetlers; 74
+Bruins - Shrews; 2; 1; Nutans; 40; Nutans; 12; Vito; 16
+Foxes - Tigers; 2; 2; Milovs; 57; Puks; 61; Pavelsons; 49; Minato; 31
+Horses - Lions; 2; 3; Brauns; 90; Dozo; 16; Shapkins; 69; Shtefenbergs; 52; Pushins; 8
+Foxes - Turtles; 0; 2; Maru; 33; Mugs; 73
+Camels - Badgers; 0; 2; Apse; 90; Apse; 77
+Raccoons - Monkeys; 0; 2; Priede; 14; Lipenbergs; 70
+Tigers - Turtles; 1; 0; Pinkovskis; 38
+Shrews - Raccoons; 6; 1; Ozolinsh; 60; Feldmanis; 35; Fetlers; 29; Feldmanis; 77; Vito; 56; Vito; 35; Shprunks; 17
+Bruins - Lions; 0; 2; Shtefenbergs; 3; Shapkins; 21
+Badgers - Otters; 7; 1; Alksnis; 35; Lapa; 64; Alksnis; 77; abele; 69; abele; 11; Plume; 26; abele; 86; Kozlovskis; 78
+Shrews - Bruins; 2; 0; Buzhoks; 22; Fetlers; 81
+Raccoons - Badgers; 2; 3; Pashko; 17; Vîtols; 90; Pîladzis; 78; Lapa; 55; Apse; 4
+Lions - Otters; 1; 3; Shtefenbergs; 85; Jansons; 8; Lukashonoks; 6; Kocers; 26
+Lions - Dogs; 8; 0; Pushins; 28; Pushins; 35; Reboks; 85; Trusevichs; 30; Skosa; 4; Rassa; 25; Trusevichs; 53; Shtefenbergs; 76
+Badgers - Bruins; 2; 3; Apse; 82; Lapa; 60; Kutans; 30; Kutans; 14; Pilovs; 2
+Otters - Bruins; 2; 2; Kaleiniks; 42; Iljinihs; 13; Arturo; 73; Gilovs; 25
+Lions - Shrews; 1; 9; Reboks; 88; Feldmanis; 4; Buzhoks; 6; Knops; 86; Knops; 46; Feldmanis; 57; Ozolinsh; 34; Ozolinsh; 13; Feldmanis; 73; Knops; 55
+Shrews - Cats; 0; 1; Konans; 80
+Monkeys - Badgers; 2; 2; Meldere; 20; Meldere; 51; Kadiíis; 22; Alksnis; 87
+Foxes - Monkeys; 0; 6; Priede; 41; Lipenbergs; 83; Lipenbergs; 75; Lipenbergs; 62; Priedîtis; 36; Lipenbergs; 89
+Monkeys - Foxes; 1; 0; Dombrovskis; 31
+Tigers - Cats; 4; 2; Pavelsons; 28; Seilis; 41; Pavelsons; 29; Seglinsh; 67; Fils; 70; Kroks; 31
+Foxes - Raccoons; 1; 2; Puks; 39; Vîtols; 56; Rjabinovs; 27
+Monkeys - Cats; 4; 1; Grînbergs; 56; Meldere; 24; Meldere; 57; Millersons; 66; Fils; 14
+Cats - Otters; 3; 1; Konans; 67; Dons; 89; Kroks; 15; Iljinihs; 59
+Camels - Otters; 3; 1; Bruklis; 22; Blazers; 2; Lacis; 33; Jansons; 16
+Raccoons - Turtles; 2; 2; Shprunks; 7; Pashko; 54; Karu; 30; Duks; 50
+Dogs - Horses; 0; 0
+Badgers - Raccoons; 0; 0
+Raccoons - Crocodiles; 1; 2; Shprunks; 2; Moti; 62; Moti; 66
+Crocodiles - Lions; 3; 0; Foti; 89; Poti; 71; Toti; 77
+Turtles - Lions; 3; 1; Mugs; 44; Jugs; 47; Maru; 53; Shapkins; 63
+Dogs - Tigers; 2; 3; Tits; 15; Kits; 43; Minato; 49; Minato; 38; Seglinsh; 52
+Dogs - Otters; 3; 3; Smits; 4; Dzhons; 20; Tits; 28; Iljinihs; 20; Lukashonoks; 63; Kozlovskis; 17
+Bruins - Foxes; 2; 2; Arturo; 20; Putans; 72; Buks; 74; Buks; 37
+Dogs - Raccoons; 0; 2; Sejonovs; 7; Shprunks; 65
+Otters - Tigers; 3; 1; Kaleiniks; 4; Lukashonoks; 76; Kozlovskis; 36; Pinkovskis; 53
+Foxes - Camels; 2; 2; Dilovs; 76; Kilovs; 81; Blazers; 69; Ashmanis; 65
+Turtles - Badgers; 3; 2; Maru; 7; Jaru; 83; Maru; 33; Pîladzis; 58; Lapa; 31
+Badgers - Foxes; 1; 2; Alksnis; 65; Milovs; 38; Buks; 50
+Bruins - Otters; 7; 2; Enriko; 58; Pilovs; 5; Gilovs; 70; Putans; 80; Pilovs; 69; Putans; 10; Putans; 30; Kaleiniks; 70; Jansons; 77
+Bruins - Turtles; 3; 1; Pilovs; 7; Arturo; 51; Putans; 49; Mugs; 78
+Bruins - Tigers; 2; 1; Pilovs; 51; Nutans; 4; Pinkovskis; 19
+Camels - Raccoons; 2; 2; Ashmanis; 7; Bruklis; 14; Vitolsks; 78; Rogovs; 2
+Crocodiles - Bruins; 1; 2; Flipers; 53; Kutans; 77; Nutans; 28
+Bruins - Monkeys; 3; 1; Kutans; 81; Kutans; 78; Arturo; 58; Priedîtis; 11
+Badgers - Horses; 2; 1; Kadiíis; 3; Lapa; 16; Dozo; 87
+Dogs - Monkeys; 3; 0; Dzhons; 17; Tits; 18; Tits; 10
+Otters - Raccoons; 0; 2; Rjabinovs; 18; Rjabinovs; 85
+Cats - Horses; 2; 1; Konans; 45; Fils; 9; Mozo; 16
+Horses - Foxes; 1; 3; Jozo; 85; Milovs; 58; Dilovs; 79; Buks; 61
+Shrews - Crocodiles; 1; 2; Ozolinsh; 26; Flipers; 56; Loti; 5
+Otters - Badgers; 2; 1; Kozlovskis; 86; Kocers; 14; abele; 7
+Foxes - Bruins; 3; 2; Buks; 48; Vilovs; 20; Dilovs; 26; Nutans; 77; Nutans; 4
+Monkeys - Otters; 3; 1; Dombrovskis; 9; Meldere; 50; Priede; 48; Jansons; 59
+Bruins - Camels; 2; 1; Kutans; 18; Kutans; 33; Ashmanis; 79
+Horses - Otters; 2; 3; Mozo; 25; Jozo; 52; Kaleiniks; 20; Lukashonoks; 32; Aleinikovs; 11
+Lions - Tigers; 3; 2; Shapkins; 23; Skosa; 16; Shtefenbergs; 57; Pinkovskis; 21; Pavelsons; 60
+Camels - Cats; 2; 1; Galbalinsh; 37; Lacis; 9; Dons; 89
+Tigers - Otters; 3; 1; Pavelsons; 22; Skuja; 57; Pavelsons; 28; Iljinihs; 56
