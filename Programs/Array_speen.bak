@@ -1,0 +1,25 @@
+program Array_speen;
+var a:array [1..1000] of longint;
+c,i:integer;
+begin
+  n:=7;
+  for i:1 to n do
+  begin
+    a[i]:=random(51);
+    write(a[i],' ');
+  end;
+  for i:=1 to n do
+  begin
+    if (n-i)=0 then
+    begin
+      a[n]:=c;
+      break;
+    end;
+    c:=a[n-i];
+    a[n-i]:=a[n+1-i];
+  end;
+  for i:=1 to n do
+  begin
+    write(a[i], ' ');
+  end;
+end.
