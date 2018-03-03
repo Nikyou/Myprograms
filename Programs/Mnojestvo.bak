@@ -1,0 +1,26 @@
+Program mnojestvo;
+
+
+function One(s:string):string;
+var i:integer; c:char;  b:set of char;
+begin
+  One:='';
+  b:=[];
+  for i:1 to length(s) do
+  begin
+    b:=b+s[i];
+  end;
+  for c:='A' to 'z' do
+  begin
+    if c in b then
+      One:=One+c;
+  end;
+end;
+
+
+var s:string;
+begin
+  s:='AISOGJYAGFSIUsafjdhsuifgahsfio';
+  Writeln(One(s));
+  Readln;
+end;
