@@ -21,7 +21,7 @@ begin
     rc:=random(16);
     SetColor(rc);
     Line(rx1, ry1, rx2, ry2);
-    If random(100)=0 then FloodFill(rx3,ry3,random(16));
+    If random(30)=0 then FloodFill(rx3,ry3,random(16));
   end;
   ReadKey;
   CloseGraph;
