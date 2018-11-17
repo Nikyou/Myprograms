@@ -1,0 +1,108 @@
+program Object3d;
+
+uses graph, WinCrt;
+
+const C = 4;
+
+type tpoint=record x,y,z:real; end;
+     TArray=array[1..100] of tpoint;
+
+function r(n:real):integer;
+begin
+  r:=round(n);
+end;
+
+function shadow(t,V:tpoint):tpoint;
+begin
+ shadow.x:=t.x+(V.x*t.z)/V.z;
+ shadow.y:=t.y+(V.y*t.z)/V.z;
+end;
+
+function perenos(t:tpoint; N:real):tpoint;
+begin
+  perenos.x:=(N*t.x)/t.z;
+  perenos.y:=(N*t.y)/t.z;
+end;
+
+
+var Gd, Gm: integer;
+   K: real;
+   kord, proj, Scena, Cadr, delta, izob:tarray;
+   MaxX, MaxY, i, j: smallint;
+   V, d, kof: tpoint;
+begin
+  randomize;
+  Gd:=0;
+  Gm:=0;
+  InitGraph (Gd, Gm, '');
+  MaxX:=GetMaxX;
+  MaxY:=GetMaxY;
+ repeat
+  ClearDevice;
+  for i:=1 To C Do
+  Begin
+    kord[i].x:=random(MaxX);
+    kord[i].y:=random(MaxY);
+    kord[i].z:=random(100)+10;
+  End;
+  V.x:= random(50)-25;
+  V.y:= random(50)-25;
+  V.z:= random(25)-26;
+  k:=1;
+  for i:=1 To C Do
+    proj[i]:=shadow(kord[i],V);
+ // for i:=1 To C Do
+ //   proj[i]:=perenos(kord[i],k);
+  Scena[1].x:=proj[1].x;
+  Scena[1].y:=proj[1].y;
+  Scena[2].x:=proj[1].x;
+  Scena[2].y:=proj[1].y;
+  for i:=2 to C do
+  begin
+    if Scena[1].x>proj[i].x then
+       Scena[1].x:=proj[i].x;
+    if Scena[1].y>proj[i].y then
+       Scena[1].y:=proj[i].y;
+    if Scena[2].x<proj[i].x then
+       Scena[2].x:=proj[i].x;
+    if Scena[2].y<proj[i].y then
+       Scena[2].y:=proj[i].y;
+  end;
+  Cadr[1].x:=20;
+  Cadr[1].y:=20;
+  Cadr[2].x:=MaxX-20;
+  Cadr[2].y:=MaxY-20;
+  kof.x:=(Cadr[2].x-Cadr[1].x)/(Scena[2].x-Scena[1].x);
+  kof.y:=(Cadr[2].y-Cadr[1].y)/(Scena[2].y-Scena[1].y);
+  If abs(kof.x)<abs(kof.y) then
+    k:=kof.x
+  else
+    k:=kof.y;
+  d.x:=((Cadr[2].x-Cadr[1].x)-((Scena[2].x-Scena[1].x)*k))/2;
+  d.y:=((Cadr[2].y-Cadr[1].y)-((Scena[2].y-Scena[1].y)*k))/2;
+  for i:=1 to C do
+  begin
+    delta[2].x:=(proj[i].x-Scena[1].x)*k;
+    izob[i].x:=Cadr[1].x+d.x+delta[2].x;
+    delta[2].y:=(proj[i].y-Scena[1].y)*k;
+    izob[i].y:=Cadr[1].y+d.y+delta[2].y;
+  end;
+  Setcolor(Blue);
+ { for i:=1 to C-1 do
+    for j:= i+1 to C Do
+      line(r(izob[i].x), r(izob[i].y), r(izob[j].x), r(izob[j].y) );}
+  line(r(izob[1].x), r(izob[1].y), r(izob[2].x), r(izob[2].y) )
+  line(r(izob[1].x), r(izob[1].y), r(izob[3].x), r(izob[3].y) )
+  line(r(izob[2].x), r(izob[2].y), r(izob[3].x), r(izob[3].y) )
+  Setcolor(brown);
+  line(r(izob[1].x), r(izob[1].y), r(izob[4].x), r(izob[4].y) )
+  line(r(izob[2].x), r(izob[2].y), r(izob[4].x), r(izob[4].y) )
+  line(r(izob[3].x), r(izob[3].y), r(izob[4].x), r(izob[4].y) )
+  putpixel(r(izob[4].x), r(izob[4].y), red);
+  Setcolor(Red);
+  Circle(r(izob[4].x), r(izob[4].y), 5);
+  delay(8000);
+ until keypressed;
+  ReadKey;
+  CloseGraph;
+end.
