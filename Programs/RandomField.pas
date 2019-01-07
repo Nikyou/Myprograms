@@ -15,21 +15,26 @@ begin
   Writeln(f,a,' ');
   Writeln(f,b,' ');
   Repeat
-    y:=random(2);
-    Write(f,y,' ');
+    y:=random(3);
     inc(i);
     inc(x);
-    if x<b then
-      Write(f,1,' ');
+    if (x<b) or (x>(a*b-b)) then
+      Write(f,1,' ')
+    else
+      if i=1 or i=b then
+        Write(f,1,' ')
+      else
+      begin
+        if y<1 then
+          Write(f,0,' ');
+        if y=2 then
+          Write(f,1,' ');
+      end;
     if i=b then
     begin
       i:=0;
       Writeln(f);
     end;
-    if x>(a*b-b) then
-      Write(f,1,' ');
-    if i=1 or i=b then
-      Write(f,1,' ');
   until x=a*b;
   Close(f);
 end;
