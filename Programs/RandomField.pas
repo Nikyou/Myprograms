@@ -21,7 +21,7 @@ begin
     if (x<b) or (x>(a*b-b)) then
       Write(f,1,' ')
     else
-      if i=1 or i=b then
+      if (i=1) or (i=b) then
         Write(f,1,' ')
       else
       begin
