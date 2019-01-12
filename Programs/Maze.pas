@@ -12,7 +12,7 @@ i,j:integer;
 begin
   Assign (f,'Field.txt');
   Reset(f);
-  ReadLn(f,N);
+  Readln(f,N);
   Readln(f,M);
   if (N>NMax) or (M>MMax) or (N<1) or (M<1) then
   begin
