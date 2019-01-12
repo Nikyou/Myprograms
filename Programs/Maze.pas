@@ -1,6 +1,6 @@
 Program Maze;
 uses crt;
-const NMax=20; MMax=60;
+const NMax=120; MMax=360;
 type TField=array[1..NMax,1..MMax] of integer;
 var field: TField;
         N,M: integer;
