@@ -1,0 +1,54 @@
+program Iosifus_riddle;
+Type PItem=^TItem;
+     TItem=Record
+        data:longint;
+        next:PItem;
+     end;
+Const
+Max=40;
+Shag=2;
+
+var start, sled,tmp: PItem;
+i:integer;
+begin
+  New(start);
+  start^.data:=1;
+  New(sled);
+  sled:=start;
+  i:=1;
+  repeat
+    New(sled^.next);
+    sled:=sled^.next;
+    inc(i);
+    sled^.data:=i;
+  until sled^.data=Max;
+  sled^.next:=start;
+  New(tmp);
+  repeat
+    sled:=start;
+    tmp:=start;
+    For i:=1 To Shag do
+      sled:=sled^.next;
+    For i:=1 to Shag-1 do
+      tmp:=tmp^.next;
+    tmp^.next:=sled^.next;
+    Dispose(sled);
+    start:=tmp^.next;
+    tmp:=start;
+    For i:=1 to Shag do
+      tmp:=tmp^.next;
+  until tmp=start;
+  for i:=1 to Shag do
+  begin
+    Writeln(start^.data);
+    start:=start^.next
+  end;
+  for i:=1 to Shag do
+  begin
+    tmp:=start;
+    start:=start^.next;
+    Dispose(tmp);
+  end;
+  Dispose(start);
+  Readln;
+end.

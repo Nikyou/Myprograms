@@ -1,0 +1,44 @@
+program Pointer_test;
+Type PItem=^TItem;
+     TItem=Record
+       data:longint;
+       next:PItem;
+     end;
+var  f:Text;
+     last,start:PItem;
+     i:boolean;
+begin
+  New(start);
+  last := start;
+  Assign(f,'For_Pointer_test.txt');
+  Reset(f);
+  repeat
+    readln(f,last^.data);
+    New(last^.next);
+    last:=last^.next;
+  until eof(f);
+  Close(f);
+  {
+  last := start;
+  while (last^.next <> NIL) do begin
+        Writeln(last^.data);
+        last := last^.next;
+  end;
+  }
+  i:=False;
+  While not (start^.next=NIL) do
+  begin
+    last:=start;
+    While not (last^.next^.next=NIL) do
+      last:=last^.next;
+    if i=True then
+      Write(last^.next^.data,'  ')
+    else
+      i:=True;
+    Dispose(last^.next^.next);
+    last^.next:=NIL;
+  end;
+  Write(start^.data);
+  Dispose(start);
+  Readln;
+end.
