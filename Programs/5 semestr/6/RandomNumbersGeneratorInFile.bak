@@ -1,0 +1,20 @@
+program RandomNumbersGeneratorInFile;
+Const
+N=20;
+R1=200;
+R2=-100;
+var f:text;
+i,c:longint;
+begin
+ // randomize;
+  Assign(f,'RandomNumbers.txt');
+  Rewrite(f);
+  Writeln(f,N);
+  for i:=1 to N do
+  begin
+    c:=random(R1)+R2;
+    Writeln(f, c);
+  end;
+  Close(f);
+  Readln;
+end.
