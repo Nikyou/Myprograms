@@ -11,23 +11,24 @@ Type Cord=Record
      End;
      PFire=^TFire;
      TFire=Record
-        id: Integer;
-        cd:Cord;
+        id,color,exp: Integer;
+        cd, oldcd:Cord;
         sp:Speed;
-        color:integer;
         next:PFire;
 	tmp1,tmp2:Cordtmp;
      end;
-var id: integer;
-tmpc:cordtmp;
+var tmpc:cordtmp;
 Const
-MaxF=50;
+MaxF=49;
 StartF=5;
-ExpF=5;
-Speed1=200;
-Speed2=-100;
-Chance1=1;
+ExpF= 200{5};
+Speed1=300;
+Speed2=-150;
+Chance1=100 {1};
 Chance2=100;
+RadF=5;
+RadExp=10;
+DelayT=0;
 
 
 Procedure StartFirework(start:PFire; MaxX, MaxY:integer);
@@ -37,7 +38,6 @@ begin
   Sled:=start;
   for i:=1 to StartF do
   begin
-    Sled^.id:=i;
     Sled^.cd.x:={MaxX div 2} random(MaxX)+1;
     Sled^.cd.y:={MaxY div 2} random(MaxY)+1;
     Sled^.sp.x:=Random(Speed1)+Speed2;
@@ -45,6 +45,7 @@ begin
     Sled^.color:=Random(15)+1;
     Sled^.tmp1:=tmpc;
     Sled^.tmp2:=tmpc;
+	Sled^.exp:=0;
     if not (i=StartF) then begin
         New(Sled^.next);
         Sled:=Sled^.next;
@@ -63,6 +64,9 @@ begin
   sled^.sp.x:=Random(Speed1)+Speed2;
   sled^.sp.y:=Random(Speed1)+Speed2;
   sled^.color:=Random(15)+1;
+  Sled^.tmp1:=tmpc;
+  Sled^.tmp2:=tmpc;
+  Sled^.exp:=1;
   While not (sled^.next=NIL) do
         sled:=sled^.next;
   if not (ExpF=1) then
@@ -71,13 +75,12 @@ begin
       New(Sled^.next);
       Sled:=Sled^.next;
       Sled^.cd:=OldCord;
-      inc(id);
-      Sled^.id:=id;
       Sled^.sp.x:=Random(Speed1)+Speed2;
       Sled^.sp.y:=Random(Speed1)+Speed2;
       Sled^.color:=Random(15)+1;
       Sled^.tmp1:=tmpc;
       Sled^.tmp2:=tmpc;
+	  Sled^.exp:=0;
     end;
   New(sled^.next);
   sled^.next:=NIL;
@@ -88,7 +91,6 @@ var start, sled: PFire;
 GD,GM,i,MaxX,MaxY:integer;
 begin
   randomize;
-  id:=5;
   tmpc.xnow:=0;
   tmpc.xleft:=0;
   tmpc.ynow:=0;
@@ -100,29 +102,47 @@ begin
   i:=StartF;
   New(start);
   StartFirework(start,MaxX,MaxY);
-  writeln(start^.id);
-  writeln(start^.next = NiL);
+  Writeln('Press key to end');
   repeat
-  sled:=start;
+    sled:=start;
     repeat
-       writeln(sled^.id);
-       Setcolor(sled^.color);
+      Setcolor(0);
+      if (Sled^.exp=1) then
+      begin
+        Circle(sled^.oldcd.x, sled^.oldcd.y, RadExp);
+        Sled^.exp:=0;
+      end;
+      if (((sled^.oldcd.x<>sled^.cd.x) or (sled^.oldcd.y<>sled^.cd.y)) and ((sled^.tmp1.xleft=0) and (sled^.tmp1.yleft=0))) then
+      begin
+        Line(sled^.oldcd.x, sled^.oldcd.y, sled^.cd.x, sled^.cd.y);
+        Circle(sled^.cd.x, sled^.cd.y, RadF);
+      end;
+      if ((sled^.tmp2.xleft<>0) or (sled^.tmp2.yleft<>0)) then
+      begin
+        circle(sled^.cd.x, sled^.cd.y, RadF);
+		Line(sled^.oldcd.x, sled^.oldcd.y, sled^.tmp1.xnow, sled^.tmp1.ynow);
+		Line(sled^.tmp1.xnow, sled^.tmp1.ynow, sled^.tmp2.xnow, sled^.tmp2.ynow);
+      	Line(sled^.tmp2.xnow, sled^.tmp2.ynow, sled^.cd.x, sled^.cd.y);
+        sled^.tmp2:=tmpc;
+        sled^.tmp1:=tmpc;
+      end;
+      if ((sled^.tmp1.xleft<>0) or (sled^.tmp1.yleft<>0)) then
+      begin
+        circle(sled^.cd.x,sled^.cd.y,RadF);
+		Line(sled^.oldcd.x, sled^.oldcd.y, sled^.tmp1.xnow, sled^.tmp1.ynow);
+       	Line(sled^.tmp1.xnow, sled^.tmp1.ynow, sled^.cd.x, sled^.cd.y);
+        sled^.tmp1:=tmpc;
+      end;
+      Setcolor(sled^.color);
       if not (i=MaxF) then
         if ((Random(Chance2)+1)<=(Chance1)) then
         begin
-          Circle(sled^.cd.x, sled^.cd.y, 10);
+          Circle(sled^.cd.x, sled^.cd.y, RadExp);
           Explosion(sled);
-          inc(i);
+       //   inc(i);
         end;
-	if ((sled^.tmp2.xleft<>0) and (sled^.tmp2.yleft<>0)) then
-	begin
-          sled^.tmp2:=tmpc;
-          sled^.tmp1:=tmpc;
-	end;
-        if ((sled^.tmp1.xleft<>0) and (sled^.tmp1.yleft<>0)) then
-	begin
-          sled^.tmp1:=tmpc;
-	end;
+      sled^.oldcd.x:=sled^.cd.x;
+      sled^.oldcd.y:=sled^.cd.y;
       if  (((sled^.cd.x+sled^.sp.x)<0) or ((sled^.cd.x+sled^.sp.x)>MaxX) or  ((sled^.cd.y+sled^.sp.y)<0) or ((sled^.cd.y+sled^.sp.y)>MaxY)) then
       begin
         if  (((sled^.cd.x+sled^.sp.x)<0) or ((sled^.cd.x+sled^.sp.x)>MaxX)) then
@@ -169,11 +189,12 @@ begin
           Line(sled^.tmp1.xnow, sled^.tmp1.ynow, sled^.tmp1.xnow+sled^.tmp1.xleft, sled^.tmp1.ynow+sled^.tmp1.yleft);
           sled^.cd.x:=sled^.tmp1.xnow+sled^.tmp1.xleft;
           sled^.cd.y:=sled^.tmp1.ynow+sled^.tmp1.yleft;
-          Circle(sled^.cd.x, sled^.cd.y, 5);
-          exit;
+          Circle(sled^.cd.x, sled^.cd.y, RadF);
         end;
-        if  (((sled^.tmp1.xleft+sled^.tmp1.xnow)<0) or ((sled^.tmp1.xleft+sled^.tmp1.xnow)>MaxX)) then
+		if (((sled^.tmp1.xleft+sled^.tmp1.xnow)>MaxX) and ((sled^.tmp1.xleft+sled^.tmp1.xnow)<0) and ((sled^.tmp1.yleft+sled^.tmp1.ynow)>MaxY) and ((sled^.tmp1.yleft+sled^.tmp1.ynow)<0)) then
         begin
+	   	  if  (((sled^.tmp1.xleft+sled^.tmp1.xnow)<0) or ((sled^.tmp1.xleft+sled^.tmp1.xnow)>MaxX)) then
+          begin
           if ((sled^.tmp1.xleft+sled^.tmp1.xnow)>MaxX) then
           begin
             sled^.tmp2.xleft:=MaxX-sled^.tmp1.xleft-sled^.tmp1.xnow;
@@ -183,41 +204,39 @@ begin
           begin
             sled^.tmp2.xleft:=abs(sled^.tmp1.xleft+sled^.tmp1.xnow);
             sled^.tmp2.xnow:=0;
-          end;
-        sled^.sp.x:=-sled^.sp.x;
-        end
-        else
-        begin
-          sled^.tmp2.xleft:=sled^.tmp1.xleft;
-          sled^.tmp2.xnow:=sled^.tmp1.xleft+sled^.tmp1.xnow;
-        end;
-        if  (((sled^.tmp1.yleft+sled^.tmp1.ynow)<0) or ((sled^.tmp1.yleft+sled^.tmp1.ynow)>MaxY)) then
-        begin
-        if ((sled^.tmp1.yleft+sled^.tmp1.ynow)>MaxY) then
+            end;
+          sled^.sp.x:=-sled^.sp.x;
+          end
+          else
           begin
-            sled^.tmp2.yleft:=MaxY-sled^.tmp1.yleft-sled^.tmp1.ynow;
-            sled^.tmp2.ynow:=MaxY;
+            sled^.tmp2.xleft:=sled^.tmp1.xleft;
+            sled^.tmp2.xnow:=sled^.tmp1.xleft+sled^.tmp1.xnow;
           end;
-          if ((sled^.tmp1.yleft+sled^.tmp1.ynow)<0) then
+          if  (((sled^.tmp1.yleft+sled^.tmp1.ynow)<0) or ((sled^.tmp1.yleft+sled^.tmp1.ynow)>MaxY)) then
           begin
-            sled^.tmp2.yleft:=abs(sled^.tmp1.yleft+sled^.tmp1.ynow);
-            sled^.tmp2.ynow:=0;
+          if ((sled^.tmp1.yleft+sled^.tmp1.ynow)>MaxY) then
+            begin
+              sled^.tmp2.yleft:=MaxY-sled^.tmp1.yleft-sled^.tmp1.ynow;
+              sled^.tmp2.ynow:=MaxY;
+            end;
+            if ((sled^.tmp1.yleft+sled^.tmp1.ynow)<0) then
+            begin
+              sled^.tmp2.yleft:=abs(sled^.tmp1.yleft+sled^.tmp1.ynow);
+              sled^.tmp2.ynow:=0;
+            end;
+          sled^.sp.y:=-sled^.sp.y;
+          end
+          else
+          begin
+            sled^.tmp2.yleft:=sled^.tmp1.yleft;
+            sled^.tmp2.ynow:=sled^.tmp1.yleft+sled^.tmp1.ynow;
           end;
-        sled^.sp.y:=-sled^.sp.y;
-        end
-        else
-        begin
-          sled^.tmp2.yleft:=sled^.tmp1.yleft;
-          sled^.tmp2.ynow:=sled^.tmp1.yleft+sled^.tmp1.ynow;
-        end;
-        if ((sled^.tmp2.xleft<>0) and (sled^.tmp2.yleft<>0)) then
-        begin
-          Line(sled^.cd.x, sled^.cd.y, sled^.tmp1.xnow, sled^.tmp1.ynow);
-          Line(sled^.tmp1.xnow, sled^.tmp1.ynow, sled^.tmp2.xnow, sled^.tmp2.ynow);
-          Line(sled^.tmp2.xnow, sled^.tmp2.ynow, sled^.tmp2.xnow+sled^.tmp2.xleft, sled^.tmp2.ynow+sled^.tmp2.yleft);
-          sled^.cd.x:=sled^.tmp2.xnow+sled^.tmp2.xleft;
-          sled^.cd.y:=sled^.tmp2.ynow+sled^.tmp2.yleft;
-          Circle(sled^.cd.x, sled^.cd.y, 5);
+            Line(sled^.cd.x, sled^.cd.y, sled^.tmp1.xnow, sled^.tmp1.ynow);
+            Line(sled^.tmp1.xnow, sled^.tmp1.ynow, sled^.tmp2.xnow, sled^.tmp2.ynow);
+            Line(sled^.tmp2.xnow, sled^.tmp2.ynow, sled^.tmp2.xnow+sled^.tmp2.xleft, sled^.tmp2.ynow+sled^.tmp2.yleft);
+            sled^.cd.x:=sled^.tmp2.xnow+sled^.tmp2.xleft;
+            sled^.cd.y:=sled^.tmp2.ynow+sled^.tmp2.yleft;
+            Circle(sled^.cd.x, sled^.cd.y, RadF);
         end;
       end
       else
@@ -225,12 +244,11 @@ begin
         Line(sled^.cd.x,sled^.cd.y,sled^.cd.x+sled^.sp.x,sled^.cd.y+sled^.sp.y);
         sled^.cd.x:=sled^.cd.x+sled^.sp.x;
         sled^.cd.y:=sled^.cd.y+sled^.sp.y;
-        Circle(sled^.cd.x, sled^.cd.y, 5);
+        Circle(sled^.cd.x, sled^.cd.y, RadF);
       end;
-      delay(100);
+      delay(DelayT);
       sled:=sled^.next;
     until sled=NIL;
-    cleardevice;
   until KeyPressed;
   while not (start^.next=NIL) do
   begin
@@ -240,6 +258,5 @@ begin
     sled:=start;
   end;
   dispose(start);
-  readln;
   CloseGraph;
 end.
