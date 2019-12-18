@@ -1,0 +1,11 @@
+program Project_Remote_Controler;
+
+uses
+  Forms;
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  Application.Run;
+end.
